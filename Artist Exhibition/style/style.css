@@ -90,3 +90,34 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+/* Walls (Gallery Sections) */
+.wall {
+    background-color: #f4f4f4; /* Light gray to mimic a wall */
+    border: 2px solid #ddd; /* Subtle border for the "wall" effect */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+/* Podiums (Under Each Image) */
+.podium {
+    background-color: #fff; /* Podium base color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Images Inside Podiums */
+.podium img {
+    max-width: 100%; /* Ensures the image fits inside the podium */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 150px; /* Ensures consistent image height */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a frame-like shadow */
+}

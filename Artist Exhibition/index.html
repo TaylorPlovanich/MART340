@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Art Exhibition - Layout</title>
+    <title>Virtual Art Exhibition - Museum Style</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -21,33 +21,43 @@
     <main>
         <section class="layout-description">
             <h2>Gallery Layout</h2>
-            <p>This section describes the layout of the exhibition and how the pieces are arranged for a seamless viewing experience.</p>
+            <p>This museum-style layout displays the works as if they were placed on walls and podiums, creating an immersive experience.</p>
         </section>
 
         <section class="gallery-layout">
             <!-- Interactive Works Column -->
-            <div class="section interactive">
+            <div class="section interactive wall">
                 <h3>Interactive Works</h3>
-                <img src="Images/Ant.png" alt="Twine Project" />
-                <p>Twine Project</p>
-                <img src="Images/pac man.jpg" alt="Pac-Man GIF" />
-                <p>Pac-Man GIF</p>
+                <div class="podium">
+                    <img src="Images/Ant.png" alt="Twine Project" />
+                    <p>Twine Project</p>
+                </div>
+                <div class="podium">
+                    <img src="Images/pac man.jpg" alt="Pac-Man GIF" />
+                    <p>Pac-Man GIF</p>
+                </div>
             </div>
 
             <!-- Video Works Column -->
-            <div class="section video">
+            <div class="section video wall">
                 <h3>Video Works</h3>
-                <img src="Images/one piece.jpg" alt="One Piece Montage" />
-                <p>One Piece Montage</p>
-                <img src="Images/pantera.jpg" alt="Ballerina and Pantera Video" />
-                <p>Ballerina & Pantera Video</p>
+                <div class="podium">
+                    <img src="Images/one piece.jpg" alt="One Piece Montage" />
+                    <p>One Piece Montage</p>
+                </div>
+                <div class="podium">
+                    <img src="Images/pantera.jpg" alt="Ballerina and Pantera Video" />
+                    <p>Ballerina & Pantera Video</p>
+                </div>
             </div>
 
             <!-- Static Works Column -->
-            <div class="section static">
+            <div class="section static wall">
                 <h3>Static Works</h3>
-                <img src="Images/Blueshell.png" alt="Mario Kart Blue Shell" />
-                <p>Mario Kart Blue Shell Illustration</p>
+                <div class="podium">
+                    <img src="Images/Blueshell.png" alt="Mario Kart Blue Shell" />
+                    <p>Mario Kart Blue Shell Illustration</p>
+                </div>
             </div>
         </section>
     </main>
