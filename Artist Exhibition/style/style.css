@@ -25,10 +25,12 @@ header h1 {
 
 nav ul {
     list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -49,75 +51,65 @@ main {
 
 .gallery-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the podiums */
     gap: 20px;
 }
 
-.section {
+/* Walls (Gallery Sections) */
+.wall {
+    background-color: #f4f4f4; /* Light gray to mimic a wall */
+    border: 2px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Podiums (Under Each Image) */
+.podium {
+    background-image: url('/Images/podium.jpeg'); /* Replace with your podium image */
+    background-size: cover; /* Ensures the image covers the entire podium area */
+    background-position: center;
+    border-radius: 8px; /* Optional: Rounded edges */
+    padding: 20px; /* Space inside the podium */
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+    height: 250px; /* Adjust to fit your podium image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the content */
+}
+
+/* Images Inside Podiums */
+.podium img {
+    max-width: 90%; /* Ensures images scale down to fit */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 150px; /* Limits image height */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow around artwork */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Section Background Colors */
 .interactive {
-    background-color: #ffeb3b;
+    background-color: #ffeb3b; /* Yellow for interactive works */
 }
 
 .video {
-    background-color: #a5d6a7;
+    background-color: #a5d6a7; /* Green for video works */
 }
 
 .static {
-    background-color: #ffcccb;
+    background-color: #ffcccb; /* Red for static works */
 }
 
-/* Image Styling */
-.section img {
-    max-width: 100%; /
-    height: auto; /
-    max-height: 150px; 
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-}
-
-/* Walls (Gallery Sections) */
-.wall {
-    background-color: #f4f4f4; /* Light gray to mimic a wall */
-    border: 2px solid #ddd; /* Subtle border for the "wall" effect */
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds depth */
-}
-
-/* Podiums (Under Each Image) */
-.podium {
-    background-color: #fff; /* Podium base color */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-}
-
-/* Images Inside Podiums */
-.podium img {
-    max-width: 100%; /* Ensures the image fits inside the podium */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 150px; /* Ensures consistent image height */
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a frame-like shadow */
 }
