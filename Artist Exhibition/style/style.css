@@ -75,12 +75,12 @@ main {
 
 /* Image Styling */
 .section img {
-    max-width: 100%; /* Scale images to fit container width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 150px; /* Limit image height */
+    max-width: 100%; /
+    height: auto; /
+    max-height: 150px; 
     border-radius: 8px;
     margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 footer {
