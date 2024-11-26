@@ -58,6 +58,7 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .interactive {
@@ -70,6 +71,16 @@ main {
 
 .static {
     background-color: #ffcccb;
+}
+
+/* Image Styling */
+.section img {
+    max-width: 100%; /* Scale images to fit container width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit image height */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 footer {
