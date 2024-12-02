@@ -105,16 +105,7 @@ main {
     background-color: #ffcccb; /* Red for static works */
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Design Flow Page Styles */
+/* Additional Section Styles */
 .design-section {
     margin: 40px 0;
     padding: 20px;
@@ -137,6 +128,7 @@ footer {
     line-height: 1.6;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
