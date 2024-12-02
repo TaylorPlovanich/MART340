@@ -56,13 +56,6 @@ main {
     margin-bottom: 50px; /* Larger space between sections */
 }
 
-.gallery-layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for the podiums */
-    gap: 40px; /* Increased gap between sections */
-}
-
-/* Walls (Gallery Sections) */
 .wall {
     background-color: rgba(255, 255, 255, 0.1); /* Dark, semi-transparent white */
     border: 3px solid rgba(255, 255, 255, 0.2); /* Slightly thicker border */
@@ -70,70 +63,46 @@ main {
     padding: 40px;
     margin-bottom: 50px;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3); /* Darker lighting effect */
-    height: 90vh; /* Set the height of the walls to fill 90% of the viewport */
-}
-
-/* Podiums (Under Each Image) */
-.podium {
-    background-color: rgba(255, 255, 255, 0.15); /* Dark, translucent background for podiums */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    padding: 60px; /* Increased padding for more space inside */
-    margin-bottom: 40px;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Larger shadow for podiums */
-    height: 500px; /* Increased height of the podium */
+    min-height: 100vh; /* Each section takes full height of the viewport */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center the content inside the podium */
+    justify-content: space-evenly;
+}
+
+/* Podium Styling */
+.podium {
+    background-color: rgba(255, 255, 255, 0.15); /* Dark, translucent background for podiums */
+    border-radius: 15px;
+    width: 80%; /* Takes up most of the section width */
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
 
 /* Images Inside Podiums */
 .podium img {
-    width: 100%; /* Make the image fill the podium width */
-    max-width: 90%; /* Limit the image to 90% of the podium width */
+    width: 100%; /* Images fill the podium's width */
     height: auto;
-    max-height: 350px; /* Increased max-height for larger images */
-    border-radius: 15px; /* Round image edges more */
-    border: 4px solid #ddd; /* Framed artwork style */
+    max-height: 500px; /* Allows the images to grow larger */
+    border-radius: 15px;
+    border: 4px solid #ddd;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-    margin-bottom: 30px; /* Larger space between image and text */
+    margin-bottom: 20px; /* Spacing below the image */
 }
 
 /* Background Colors for Sections */
 .interactive {
     background-color: rgba(255, 183, 77, 0.2); /* Soft amber for interactive works */
-    padding: 120px 20px; /* Increase padding for larger content area */
-    width: 100%;
-    height: 120vh; /* Ensure the section takes up more space vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
 .video {
     background-color: rgba(165, 214, 167, 0.2); /* Light green with opacity for video works */
-    padding: 120px 20px; /* Increase padding for larger content area */
-    width: 100%;
-    height: 120vh; /* Ensure the section takes up more space vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
 .static {
     background-color: rgba(255, 204, 203, 0.2); /* Light red tone with opacity for static works */
-    padding: 120px 20px; /* Increase padding for larger content area */
-    width: 100%;
-    height: 120vh; /* Ensure the section takes up more space vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
 /* Footer */
