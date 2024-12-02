@@ -17,11 +17,11 @@ body {
 
 /* Header and Navigation */
 header {
-    background-color: #2c2c2c;
+    background-color: #2c2c2c; /* Darker shade like a sophisticated museum theme */
     color: #fff;
-    padding: 15px 0;
+    padding: 30px 0; /* Increased padding for more spacing */
     text-align: center;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Elegant serif font for a classic look */
 }
 
 header h1 {
@@ -42,64 +42,67 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px; /* Larger font size for better visibility */
 }
 
-/* Wall Sections */
+/* Main Content */
+main {
+    padding: 40px 0; /* Larger top and bottom padding */
+}
+
+/* Gallery Layout Section */
+.layout-description {
+    text-align: center;
+    margin-bottom: 50px; /* Larger space between sections */
+}
+
 .wall {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.25);
-    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Dark, semi-transparent white */
+    border: 3px solid rgba(255, 255, 255, 0.2); /* Slightly thicker border */
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3); /* Darker lighting effect */
+    min-height: 100vh; /* Each section takes full height of the viewport */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.wall h2 {
-    margin-bottom: 20px;
-}
-
-/* Podium Style */
+/* Podium Styling */
 .podium {
+    background-color: rgba(255, 255, 255, 0.15); /* Dark, translucent background for podiums */
+    border-radius: 15px;
+    width: 80%; /* Takes up most of the section width */
+    padding: 40px;
+    margin-bottom: 30px;
     text-align: center;
-    max-width: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
 }
 
+/* Images Inside Podiums */
 .podium img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+    width: 100%; /* Images fill the podium's width */
+    height: auto;
+    max-height: 500px; /* Allows the images to grow larger */
+    border-radius: 15px;
     border: 4px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    margin-bottom: 20px; /* Spacing below the image */
 }
 
-.podium img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-
-.podium p {
-    margin-top: 10px;
-}
-
-/* Wall Backgrounds */
+/* Background Colors for Sections */
 .interactive {
-    background-color: rgba(255, 183, 77, 0.2);
+    background-color: rgba(255, 183, 77, 0.2); /* Soft amber for interactive works */
 }
 
 .video {
-    background-color: rgba(165, 214, 167, 0.2);
+    background-color: rgba(165, 214, 167, 0.2); /* Light green with opacity for video works */
 }
 
 .static {
-    background-color: rgba(255, 204, 203, 0.2);
+    background-color: rgba(255, 204, 203, 0.2); /* Light red tone with opacity for static works */
 }
 
 /* Footer */
@@ -107,6 +110,11 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 50px; /* Increased margin-top for footer */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
 }
