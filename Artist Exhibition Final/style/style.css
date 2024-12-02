@@ -103,14 +103,35 @@ main {
 /* Background Colors for Sections */
 .interactive {
     background-color: rgba(255, 183, 77, 0.2); /* Soft amber for interactive works */
+    padding: 100px 20px; /* Increase padding for larger content area */
+    width: 100%; /* Ensure it spans full width */
+    height: 120vh; /* Larger section height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .video {
     background-color: rgba(165, 214, 167, 0.2); /* Light green with opacity for video works */
+    padding: 100px 20px; /* Increase padding for larger content area */
+    width: 100%; /* Ensure it spans full width */
+    height: 120vh; /* Larger section height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .static {
     background-color: rgba(255, 204, 203, 0.2); /* Light red tone with opacity for static works */
+    padding: 100px 20px; /* Increase padding for larger content area */
+    width: 100%; /* Ensure it spans full width */
+    height: 120vh; /* Larger section height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 /* Footer */
