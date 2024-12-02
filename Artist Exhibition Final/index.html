@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="artworks.html">Artworks</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -29,16 +30,18 @@
             <div class="section interactive wall">
                 <h3>Interactive Works</h3>
                 <div class="podium">
-                    <a href="artworks.html#twine-project">
+                    <a href="#" class="show-artwork" data-artwork="twine-project">
                         <img src="Images/antpodium.jpg" alt="Twine Project" />
                     </a>
                     <p>Twine Project</p>
+                    <span class="arrow" onclick="showArtwork('twine-project')">→</span>
                 </div>
                 <div class="podium">
-                    <a href="artworks.html#pacman">
+                    <a href="#" class="show-artwork" data-artwork="pacman">
                         <img src="Images/pacmanpodium.jpg" alt="Pac-Man GIF" />
                     </a>
                     <p>Pac-Man GIF</p>
+                    <span class="arrow" onclick="showArtwork('pacman')">→</span>
                 </div>
             </div>
 
@@ -46,16 +49,18 @@
             <div class="section video wall">
                 <h3>Video Works</h3>
                 <div class="podium">
-                    <a href="artworks.html#one-piece">
+                    <a href="#" class="show-artwork" data-artwork="one-piece">
                         <img src="Images/onepiecepodium.jpg" alt="One Piece Montage" />
                     </a>
                     <p>One Piece Montage</p>
+                    <span class="arrow" onclick="showArtwork('one-piece')">→</span>
                 </div>
                 <div class="podium">
-                    <a href="artworks.html#pantera">
+                    <a href="#" class="show-artwork" data-artwork="pantera">
                         <img src="Images/panterapodium.jpg" alt="Ballerina and Pantera Video" />
                     </a>
                     <p>Ballerina & Pantera Video</p>
+                    <span class="arrow" onclick="showArtwork('pantera')">→</span>
                 </div>
             </div>
 
@@ -63,17 +68,59 @@
             <div class="section static wall">
                 <h3>Static Works</h3>
                 <div class="podium">
-                    <a href="artworks.html#blue-shell">
+                    <a href="#" class="show-artwork" data-artwork="blue-shell">
                         <img src="Images/blueshellpodium.jpg" alt="Mario Kart Blue Shell" />
                     </a>
                     <p>Mario Kart Blue Shell Illustration</p>
+                    <span class="arrow" onclick="showArtwork('blue-shell')">→</span>
                 </div>
             </div>
+        </section>
+
+        <!-- Modal/Lightbox to Display Artworks -->
+        <div id="artwork-modal" class="modal">
+            <span class="close" onclick="closeModal()">×</span>
+            <div id="artwork-content"></div>
         </section>
     </main>
 
     <footer>
         <p>© 2024 Virtual Art Exhibition</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showArtwork(artworkId) {
+            var artworkContent = document.getElementById("artwork-content");
+
+            switch (artworkId) {
+                case 'twine-project':
+                    artworkContent.innerHTML = '<h3>Twine Project</h3><a href="your-twine-link-here" target="_blank"><img src="Images/twine-thumbnail.jpg" alt="Twine Project"></a>';
+                    break;
+                case 'pacman':
+                    artworkContent.innerHTML = '<h3>Pacman GIF</h3><img src="Images/pacman.gif" alt="Pacman GIF">';
+                    break;
+                case 'one-piece':
+                    artworkContent.innerHTML = '<h3>One Piece Montage</h3><video controls><source src="Videos/one-piece.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+                    break;
+                case 'pantera':
+                    artworkContent.innerHTML = '<h3>Pantera - Cowboys from Hell</h3><video controls><source src="Videos/pantera.mp4" type="video/mp4">Your browser does not support the video tag.</video>';
+                    break;
+                case 'blue-shell':
+                    artworkContent.innerHTML = '<h3>Blue Shell Illustration</h3><img src="Images/blue-shell.jpg" alt="Blue Shell">';
+                    break;
+                default:
+                    artworkContent.innerHTML = '<p>Artwork not found.</p>';
+            }
+
+            // Open the modal to display the artwork
+            document.getElementById("artwork-modal").style.display = "block";
+        }
+
+        // Close the modal when clicking the '×'
+        function closeModal() {
+            document.getElementById("artwork-modal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
