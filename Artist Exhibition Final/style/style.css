@@ -144,3 +144,31 @@ footer a {
 footer a:hover {
     color: #1abc9c; /* Highlight color on hover */
 }
+
+/* Introduction Section */
+.intro {
+    text-align: center; /* Centers the text horizontally */
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Light shadow for depth */
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #ddd;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Centers the paragraph with automatic margins */
+    line-height: 1.6;
+}
+
+.intro p:last-of-type {
+    font-style: italic;
+}
