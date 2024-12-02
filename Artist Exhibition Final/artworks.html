@@ -3,69 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artworks</title>
-    <link rel="stylesheet" href="style/artworks.css">
+    <title>Artworks - Virtual Art Exhibition</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <!-- Introduction Section -->
-    <section class="intro">
-        <h2>Art Exhibition</h2>
-        <p>Welcome to the exhibition! Click on the artworks to explore each piece. Use the arrows to navigate through the gallery.</p>
-    </section>
+    <header>
+        <h1>Creative Juxtapositions: Virtual Art Exhibition</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#twine-project">Twine Project</a></li>
+                <li><a href="#pacman">Pac-Man GIF</a></li>
+                <li><a href="#one-piece">One Piece Montage</a></li>
+                <li><a href="#pantera">Ballerina & Pantera Video</a></li>
+                <li><a href="#blue-shell">Mario Kart Blue Shell</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Artworks Gallery -->
-    <div class="artwork-gallery">
-        <!-- Twine Project -->
-        <div class="artwork" id="twine-project">
-            <h3>Twine Project</h3>
+    <main>
+        <!-- Twine Project Section -->
+        <section id="twine-project">
+            <h2>Twine Project</h2>
             <a href="your-twine-link-here" target="_blank">
                 <img src="Images/twine-thumbnail.jpg" alt="Twine Project">
             </a>
-        </div>
+        </section>
 
-        <!-- Pacman GIF -->
-        <div class="artwork" id="pacman">
-            <h3>Pacman GIF</h3>
-            <img src="Images/pacman.gif" alt="Pacman GIF">
-        </div>
+        <!-- Pac-Man GIF Section -->
+        <section id="pacman">
+            <h2>Pac-Man GIF</h2>
+            <img src="Images/pacman.gif" alt="Pac-Man GIF">
+        </section>
 
-        <!-- One Piece Video -->
-        <div class="artwork" id="one-piece">
-            <h3>One Piece Montage</h3>
+        <!-- One Piece Montage Section -->
+        <section id="one-piece">
+            <h2>One Piece Montage</h2>
             <video controls>
                 <source src="Videos/one-piece.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
+        </section>
 
-        <!-- Pantera Video -->
-        <div class="artwork" id="pantera">
-            <h3>Pantera - Cowboys from Hell</h3>
+        <!-- Ballerina & Pantera Video Section -->
+        <section id="pantera">
+            <h2>Ballerina & Pantera Video</h2>
             <video controls>
                 <source src="Videos/pantera.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
+        </section>
 
-        <!-- Blue Shell Image -->
-        <div class="artwork" id="blue-shell">
-            <h3>Blue Shell Illustration</h3>
+        <!-- Mario Kart Blue Shell Illustration Section -->
+        <section id="blue-shell">
+            <h2>Mario Kart Blue Shell</h2>
             <img src="Images/blue-shell.jpg" alt="Blue Shell">
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <!-- Gallery Navigation -->
-    <div class="gallery-navigation">
-        <button class="prev" onclick="showArtwork('prev')">←</button>
-        <button class="next" onclick="showArtwork('next')">→</button>
-    </div>
-
-    <!-- Link back to the homepage -->
-    <div class="home-link">
-        <a href="index.html">Back to Homepage</a>
-    </div>
-
-    <!-- JavaScript File -->
-    <script src="style/gallery.js"></script>
+    <footer>
+        <p>© 2024 Virtual Art Exhibition</p>
+    </footer>
 </body>
 </html>
