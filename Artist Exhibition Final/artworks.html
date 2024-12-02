@@ -4,65 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artworks</title>
-    <link rel="stylesheet" href="style/artworks.css"> <!-- Only Artworks-specific styles -->
+    <link rel="stylesheet" href="artworks.css">
 </head>
 <body>
-    <header>
-        <h1>My Artworks</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li> <!-- Link to the homepage -->
-            </ul>
-        </nav>
-    </header>
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>Art Exhibition</h2>
+        <p>Welcome to the exhibition! Click on the artworks to explore each piece. Use the arrows to navigate through the gallery.</p>
+    </section>
 
-    <main>
-        <div class="wall">
-            <h2>My Artworks</h2>
-            
-            <!-- Twine Project Link -->
-            <div class="podium">
-                <h3>Interactive Story (Twine)</h3>
-                <a href="path/to/your/twine-project.html" target="_blank">Click here to view my interactive story!</a>
-            </div>
-
-            <!-- Pac-Man GIF -->
-            <div class="podium">
-                <h3>Pac-Man GIF</h3>
-                <video controls>
-                    <source src="path/to/your/pacman-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            
-            <!-- One Piece Montage -->
-            <div class="podium">
-                <h3>One Piece Montage</h3>
-                <video controls>
-                    <source src="path/to/your/one-piece-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <!-- Pantera Video -->
-            <div class="podium">
-                <h3>Pantera - Cowboys from Hell Video</h3>
-                <video controls>
-                    <source src="path/to/your/pantera-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <!-- Blue Shell Illustration -->
-            <div class="podium">
-                <h3>Blue Shell Illustration</h3>
-                <img src="path/to/your/blue-shell-image.jpg" alt="Blue Shell" />
-            </div>
+    <!-- Artworks Gallery -->
+    <div class="artwork-gallery">
+        <!-- Twine Project -->
+        <div class="artwork active">
+            <h3>Twine Project</h3>
+            <a href="your-twine-link-here" target="_blank">
+                <img src="Images/twine-thumbnail.jpg" alt="Twine Project">
+            </a>
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+        <!-- Pacman GIF -->
+        <div class="artwork">
+            <h3>Pacman GIF</h3>
+            <img src="Images/pacman.gif" alt="Pacman GIF">
+        </div>
+
+        <!-- One Piece Video -->
+        <div class="artwork">
+            <h3>One Piece Montage</h3>
+            <video controls>
+                <source src="Videos/one-piece.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Pantera Video -->
+        <div class="artwork">
+            <h3>Pantera - Cowboys from Hell</h3>
+            <video controls>
+                <source src="Videos/pantera.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Blue Shell Image -->
+        <div class="artwork">
+            <h3>Blue Shell Illustration</h3>
+            <img src="Images/blue-shell.jpg" alt="Blue Shell">
+        </div>
+    </div>
+
+    <!-- Gallery Navigation -->
+    <div class="gallery-navigation">
+        <button class="prev" onclick="showArtwork('prev')">←</button>
+        <button class="next" onclick="showArtwork('next')">→</button>
+    </div>
+
+    <!-- Link back to the homepage -->
+    <div class="home-link">
+        <a href="index.html">Back to Homepage</a>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="gallery.js"></script>
 </body>
 </html>
