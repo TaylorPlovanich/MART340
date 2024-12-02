@@ -147,12 +147,17 @@ footer a:hover {
 
 /* Introduction Section */
 .intro {
-    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks the text vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    text-align: center; /* Ensures text inside is centered */
     padding: 50px 20px;
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
     border-radius: 15px;
     margin-bottom: 50px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Light shadow for depth */
+    height: 400px; /* Sets the height of the intro section for vertical centering */
 }
 
 .intro h2 {
@@ -165,7 +170,7 @@ footer a:hover {
     font-size: 18px;
     color: #ddd;
     max-width: 800px;
-    margin: 0 auto 30px auto; /* Centers the paragraph with automatic margins */
+    margin: 0 auto 30px auto; /* Centers the paragraph */
     line-height: 1.6;
 }
 
