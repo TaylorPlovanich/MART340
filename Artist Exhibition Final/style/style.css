@@ -104,29 +104,36 @@ main {
 .interactive {
     background-color: rgba(255, 183, 77, 0.2); /* Soft amber for interactive works */
     padding: 40px; /* Increased padding for more space */
-    height: 400px; /* Increased height */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Ensures padding doesn't affect size */
 }
 
 .video {
     background-color: rgba(165, 214, 167, 0.2); /* Light green with opacity for video works */
     padding: 40px; /* Increased padding for more space */
-    height: 400px; /* Increased height */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Ensures padding doesn't affect size */
 }
 
 .static {
     background-color: rgba(255, 204, 203, 0.2); /* Light red tone with opacity for static works */
     padding: 40px; /* Increased padding for more space */
-    height: 400px; /* Increased height */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Ensures padding doesn't affect size */
 }
+
 
 /* Footer */
 footer {
