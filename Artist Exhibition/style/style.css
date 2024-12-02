@@ -67,31 +67,29 @@ main {
 
 /* Podiums (Under Each Image) */
 .podium {
-    position: relative; /* Enables positioning of child elements */
     background-image: url('/Images/podium.jpeg'); /* Replace with your podium image */
     background-size: cover; /* Ensures the image covers the entire podium area */
     background-position: center;
     border-radius: 8px; /* Optional: Rounded edges */
+    padding: 20px; /* Space inside the podium */
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
     height: 250px; /* Adjust to fit your podium image */
     display: flex;
-    align-items: flex-end; /* Aligns images at the bottom */
-    justify-content: center; /* Centers the content horizontally */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the content */
 }
 
 /* Images Inside Podiums */
 .podium img {
-    position: absolute; /* Allows the image to float over the podium */
-    top: 15%; /* Adjusts the image's position vertically */
-    left: 50%; /* Centers horizontally */
-    transform: translate(-50%, -15%); /* Centers the image properly */
-    width: 80%; /* Scales the image to fit inside the podium */
+    max-width: 90%; /* Ensures images scale down to fit */
     height: auto; /* Maintains aspect ratio */
-    max-height: 70%; /* Ensures it doesn’t overflow the podium */
+    max-height: 150px; /* Limits image height */
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow around artwork */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow around artwork */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
 /* Section Background Colors */
@@ -116,11 +114,6 @@ footer {
     margin-top: 20px;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: underline;
-}
-
 /* Design Flow Page Styles */
 .design-section {
     margin: 40px 0;
@@ -142,4 +135,17 @@ footer a {
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
 }
