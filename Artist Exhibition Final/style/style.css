@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.layout-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the podiums */
+    gap: 20px;
+}
+
+/* Walls (Gallery Sections) */
+.wall {
+    background-color: #f4f4f4; /* Light gray to mimic a wall */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Podiums (Under Each Image) */
+.podium {
+    background-image: url('/Images/podium.jpeg'); /* Replace with your podium image */
+    background-size: cover; /* Ensures the image covers the entire podium area */
+    background-position: center;
+    border-radius: 8px; /* Optional: Rounded edges */
+    padding: 20px; /* Space inside the podium */
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+    height: 250px; /* Adjust to fit your podium image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the content */
+}
+
+/* Images Inside Podiums */
+.podium img {
+    max-width: 90%; /* Ensures images scale down to fit */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 150px; /* Limits image height */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow around artwork */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Section Background Colors */
+.interactive {
+    background-color: #ffeb3b; /* Yellow for interactive works */
+}
+
+.video {
+    background-color: #a5d6a7; /* Green for video works */
+}
+
+.static {
+    background-color: #ffcccb; /* Red for static works */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Design Flow Page Styles */
+.design-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.design-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.design-section p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
