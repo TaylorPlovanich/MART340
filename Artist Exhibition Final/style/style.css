@@ -7,16 +7,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5; /* Light, neutral color for the body */
+    background-image: url('Images/wall-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the whole page */
+    background-position: center;
     color: #333;
     line-height: 1.6;
 }
 
+/* Header and Navigation */
 header {
-    background-color: #333;
+    background-color: #2c2c2c; /* Darker shade like a sophisticated museum theme */
     color: #fff;
-    padding: 20px;
+    padding: 15px 0;
     text-align: center;
+    font-family: 'Georgia', serif; /* Elegant serif font for a classic look */
 }
 
 header h1 {
@@ -40,10 +46,12 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Main Content */
 main {
     padding: 20px;
 }
 
+/* Gallery Layout Section */
 .layout-description {
     text-align: center;
     margin-bottom: 30px;
@@ -57,42 +65,43 @@ main {
 
 /* Walls (Gallery Sections) */
 .wall {
-    background-color: #f4f4f4; /* Light gray to mimic a wall */
+    background-color: #f4f4f4; /* Light gray background for the wall effect */
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.15); /* Lighting effect */
 }
 
 /* Podiums (Under Each Image) */
 .podium {
-    background-image: url('/Images/podium.jpeg'); /* Replace with your podium image */
-    background-size: cover; /* Ensures the image covers the entire podium area */
+    background-image: url('/Images/grunge-wall-texture.jpeg'); /* Podium background */
+    background-size: cover;
     background-position: center;
-    border-radius: 8px; /* Optional: Rounded edges */
-    padding: 20px; /* Space inside the podium */
+    border-radius: 8px; /* Rounded edges for podiums */
+    padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
-    height: 250px; /* Adjust to fit your podium image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Depth effect */
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centers the content */
+    justify-content: center; /* Center the content inside the podium */
 }
 
 /* Images Inside Podiums */
 .podium img {
-    max-width: 90%; /* Ensures images scale down to fit */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 150px; /* Limits image height */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow around artwork */
+    max-width: 90%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 10px; /* Rounded image edges */
+    border: 4px solid #ddd; /* Framed artwork style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
     margin-bottom: 10px; /* Space between image and text */
 }
 
-/* Section Background Colors */
+/* Background Colors for Sections */
 .interactive {
     background-color: #ffeb3b; /* Yellow for interactive works */
 }
@@ -106,37 +115,6 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Design Flow Page Styles */
-.design-section {
-    margin: 40px 0;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.design-section h2 {
-    margin-bottom: 15px;
-    font-size: 1.8em;
-    color: #333;
-}
-
-.design-section p {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-}
-
 footer {
     background-color: #333;
     color: #fff;
