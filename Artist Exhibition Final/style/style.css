@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5; /* Light, neutral color for the body */
-    background-image: url('Images/wall-texture.jpg');
+    background-image: url('Images/grunge-wall-texture.jpg');
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the background covers the whole page */
     background-position: center;
@@ -75,7 +75,7 @@ main {
 
 /* Podiums (Under Each Image) */
 .podium {
-    background-image: url('/Images/grunge-wall-texture.jpeg'); /* Podium background */
+    background-image: url('/Images/.jpeg'); /* Podium background */
     background-size: cover;
     background-position: center;
     border-radius: 8px; /* Rounded edges for podiums */
