@@ -110,99 +110,55 @@ main {
 }
 
 .podium img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05); /* Zoom effect on hover */
 }
 
-/* Background Colors for Sections */
-.interactive {
-    background-color: rgba(255, 183, 77, 0.2);
+/* Text Under Image */
+.podium p {
+    font-size: 18px;
+    color: #fff;
+    font-style: italic;
 }
 
-.video {
-    background-color: rgba(165, 214, 167, 0.2);
+/* Comments Section */
+.comments-section {
+    margin-top: 50px;
 }
 
-.static {
-    background-color: rgba(255, 204, 203, 0.2);
+.comments-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comments-section input,
+.comments-section textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comments-section button {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.comments-section button:hover {
+    background-color: #e67e22;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #2c2c2c;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: underline;
-    transition: color 0.3s ease; /* Smooth hover transition */
-}
-
-footer a:hover {
-    color: #1abc9c; /* Highlight color on hover */
-}
-
-/* Introduction Section */
-.intro {
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Stacks the text vertically */
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically */
-    text-align: center; /* Ensures text inside is centered */
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border-radius: 15px;
-    margin-bottom: 50px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Light shadow for depth */
-    height: 400px; /* Sets the height of the intro section for vertical centering */
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 18px;
-    color: #ddd;
-    max-width: 800px;
-    margin: 0 auto 30px auto; /* Centers the paragraph */
-    line-height: 1.6;
-}
-
-.intro p:last-of-type {
-    font-style: italic;
-}
-
-.back-link {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.back-link a {
-    font-size: 1.5rem; /* Adjust size as needed */
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 0; /* Add spacing between links */
-}
-
-.back-link a:hover {
-    text-decoration: underline; /* Optional hover effect */
-}
-
-.external-link p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: underline;
-    margin-top: 1rem;
-}
-
-.external-link:hover p {
-    color: #ffa500; /* Example hover effect */
+    font-size: 14px;
 }
