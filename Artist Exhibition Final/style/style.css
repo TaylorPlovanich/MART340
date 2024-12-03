@@ -195,3 +195,14 @@ footer a:hover {
     text-decoration: underline; /* Optional hover effect */
 }
 
+.external-link p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+.external-link:hover p {
+    color: #ffa500; /* Example hover effect */
+}
