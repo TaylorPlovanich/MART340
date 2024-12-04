@@ -97,6 +97,15 @@ main {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* More pronounced shadow on hover */
 }
 
+/* Centered Text for Podiums */
+.podium p {
+    text-align: center; /* Centers the text horizontally */
+    font-size: 1.2rem; /* Adjust the size for better readability */
+    margin-top: 10px; /* Adds space between the image and the text */
+    color: #fff; /* Ensures the text is readable */
+    font-weight: bold; /* Makes the text stand out */
+}
+
 /* Images Inside Podiums */
 .podium img {
     width: 100%;
@@ -163,7 +172,6 @@ footer a:hover {
     word-wrap: break-word; /* Ensure long words break properly */
 }
 
-
 .intro h2 {
     font-size: 36px;
     color: #fff;
@@ -209,12 +217,4 @@ footer a:hover {
 
 .external-link:hover p {
     color: #ffa500; /* Example hover effect */
-}
-
-.podium p {
-    text-align: center; /* Centers the text horizontally */
-    font-size: 1.2rem; /* Adjust the size for better readability */
-    margin-top: 10px; /* Adds space between the image and the text */
-    color: #fff; /* Ensures the text is readable */
-    font-weight: bold; /* Makes the text stand out */
 }
