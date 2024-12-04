@@ -210,3 +210,11 @@ footer a:hover {
 .external-link:hover p {
     color: #ffa500; /* Example hover effect */
 }
+
+.podium p {
+    text-align: center; /* Centers the text horizontally */
+    font-size: 1.2rem; /* Adjust the size for better readability */
+    margin-top: 10px; /* Adds space between the image and the text */
+    color: #fff; /* Ensures the text is readable */
+    font-weight: bold; /* Makes the text stand out */
+}
